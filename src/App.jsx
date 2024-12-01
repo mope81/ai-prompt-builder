@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
 import Navbar from './components/Navbar';
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
         <LoadingProvider>
-          <div className="min-h-screen bg-[#0B0F17] text-white">
+          <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white flex flex-col">
             <Navbar />
             <Suspense fallback={<GlobalLoadingIndicator />}>
               <Routes>
