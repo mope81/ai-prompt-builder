@@ -74,11 +74,20 @@ button:focus-visible {
 @layer base {
   html {
     font-family: Inter, system-ui, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
   }
   
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-[#0B0F17] text-white m-0 p-0 min-h-screen;
+    overflow-x: hidden;
+  }
+  
+  #root {
+    @apply min-h-screen flex flex-col;
   }
 }
 
@@ -91,13 +100,16 @@ button:focus-visible {
     @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
   }
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700;
+    @apply bg-blue-600 text-white hover:bg-blue-700;
   }
   .btn-secondary {
-    @apply bg-gray-200 text-gray-900 hover:bg-gray-300;
+    @apply bg-gray-700 text-white hover:bg-gray-600;
   }
   .input {
-    @apply block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500;
+    @apply block w-full rounded-lg bg-gray-700 border-gray-600 text-white focus:ring-blue-500 focus:border-blue-500;
+  }
+  .card {
+    @apply bg-gray-800/50 backdrop-blur-sm rounded-xl p-6;
   }
   .section {
     @apply py-16 sm:py-24;

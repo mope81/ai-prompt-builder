@@ -16,16 +16,18 @@ function App() {
     <Router>
       <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
         <LoadingProvider>
-          <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white flex flex-col">
+          <div className="min-h-screen bg-[#0B0F17] text-white flex flex-col overflow-x-hidden">
             <Navbar />
             <Suspense fallback={<GlobalLoadingIndicator />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/prompt" element={<Prompt />} />
-                <Route path="/learn" element={<Learn />} />
-                <Route path="/community" element={<Community />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
+              <div className="flex-1 flex flex-col">
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/prompt" element={<Prompt />} />
+                  <Route path="/learn" element={<Learn />} />
+                  <Route path="/community" element={<Community />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </div>
             </Suspense>
           </div>
         </LoadingProvider>
