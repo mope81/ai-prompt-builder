@@ -73,6 +73,7 @@ button:focus-visible {
 
 @layer base {
   html {
+    font-family: Inter, system-ui, sans-serif;
     scroll-behavior: smooth;
   }
   
@@ -89,11 +90,15 @@ button:focus-visible {
   .btn {
     @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
   }
-  
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary/90;
+    @apply bg-primary-600 text-white hover:bg-primary-700;
   }
-  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300;
+  }
+  .input {
+    @apply block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500;
+  }
   .section {
     @apply py-16 sm:py-24;
   }
