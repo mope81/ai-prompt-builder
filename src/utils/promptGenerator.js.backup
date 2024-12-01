@@ -1,0 +1,267 @@
+// 词库数据
+const vocabularyLibrary = {
+  subject: {
+    name: '主题',
+    values: [
+      // 自然景观
+      'a mystical forest at dawn', 'a futuristic city in neon lights', 'a serene mountain lake at sunset', 
+      'an ancient temple hidden in mist', 'a cosmic nebula with swirling colors', 'a magical floating island',
+      'a peaceful zen garden in autumn', 'a bustling night market in rain', 'an underwater coral city',
+      'a desert oasis under starlight', 'a crystalline ice cave', 'a volcanic landscape at twilight',
+      'a bioluminescent beach at night', 'a rainbow waterfall in jungle', 'a misty bamboo forest',
+      'a northern lights display', 'a cherry blossom storm', 'a meteor shower over desert',
+      'a giant redwood forest', 'a tropical paradise island', 'a geothermal hot spring',
+      
+      // 人物场景
+      'a cyberpunk street vendor', 'a mysterious fortune teller', 'a wandering samurai in cherry blossoms',
+      'a space explorer on alien planet', 'a steampunk inventor in workshop', 'a magical librarian with books',
+      'a dragon tamer with ancient scroll', 'a time traveler in victorian era', 'a witch brewing potions',
+      'a digital nomad in future cafe', 'an alchemist in secret lab', 'a street artist creating mural',
+      'a quantum physicist at work', 'a deep sea explorer', 'a desert archaeologist',
+      'a robotic chef in kitchen', 'a hologram street performer', 'a space station mechanic',
+      
+      // 奇幻生物
+      'a phoenix rising from ashes', 'a crystal dragon in flight', 'a mechanical unicorn with gears',
+      'a spirit fox with nine tails', 'a rainbow serpent in clouds', 'a jade lion guardian statue',
+      'a golden butterfly migration', 'a celestial deer constellation', 'an electric jellyfish school',
+      'a clockwork phoenix', 'a digital spirit wolf', 'a coral reef dragon',
+      'a quantum butterfly swarm', 'a plasma energy being', 'a crystal golem guardian',
+      'a time-shifting sphinx', 'a dream weaver spider', 'a star whale in space',
+      
+      // 建筑空间
+      'a floating sky palace', 'an underwater glass dome city', 'a treehouse library in giant tree',
+      'a steampunk clock tower', 'a crystal greenhouse garden', 'a neon subway station at midnight',
+      'a floating market on canal', 'a hidden mountain monastery', 'an art deco theater facade',
+      'a quantum computing facility', 'a vertical forest skyscraper', 'a solar punk community',
+      'a biodome on mars surface', 'an ancient library ruins', 'a floating tea house',
+      'a holographic art gallery', 'a bamboo sky bridge', 'a subterranean crystal city',
+      
+      // 抽象概念
+      'the concept of time flow', 'the dance of four seasons', 'the birth of a new universe',
+      'the melody of northern lights', 'the spirit of ancient forest', 'the dreams of ocean depths',
+      'the balance of yin and yang', 'the cycle of life and death', 'the harmony of elements',
+      'the convergence of realities', 'the essence of creativity', 'the pulse of urban life',
+      'the whispers of quantum realm', 'the rhythm of cosmos', 'the flow of digital data',
+      'the echoes of lost civilizations', 'the dance of probability', 'the song of wind and rain'
+    ]
+  },
+  style: {
+    name: '风格',
+    values: [
+      // 艺术风格
+      'hyperrealistic digital art', 'impressionistic oil painting', 'ethereal watercolor illustration',
+      'detailed pencil sketch', 'vibrant concept art', 'minimalistic line art', 'surrealistic digital painting',
+      'art nouveau style', 'ukiyo-e japanese style', 'pop art aesthetic', 'gothic dark fantasy',
+      'abstract expressionism', 'cubist interpretation', 'baroque digital fusion', 'pointillism technique',
+      'graffiti street art', 'bauhaus design', 'art deco elegance', 'modernist simplicity',
+      'post-impressionist vision', 'contemporary minimalism', 'classical realism',
+      
+      // 技术风格
+      'cinematic 8K rendering', 'studio photography', 'isometric pixel art', 'low poly 3D art',
+      'retro synthwave style', 'cyberpunk neon art', 'vaporwave aesthetic', 'glitch art effect',
+      'neural network generation', 'procedural fractal art', 'generative adversarial art',
+      'volumetric light simulation', 'ray traced rendering', 'holographic projection',
+      'quantum visualization', 'augmented reality overlay', 'virtual reality space',
+      
+      // 混合风格
+      'mixed media collage', 'geometric abstract', 'photorealistic fantasy', 'sci-fi concept art',
+      'steampunk mechanical', 'art deco futurism', 'baroque cyberpunk fusion', 'tribal futuristic',
+      'organic tech fusion', 'retro futuristic blend', 'digital impressionism', 'neo traditional',
+      'biomechanical hybrid', 'ethereal cyberpunk', 'quantum baroque', 'cosmic art nouveau',
+      'techno-organic fusion', 'digital surrealism', 'cyber-impressionism',
+      
+      // 材质风格
+      'metallic chrome finish', 'holographic iridescent', 'glass crystal clear', 'wooden organic texture',
+      'liquid metal flow', 'paper cut art style', 'ceramic glazed look', 'fabric textile pattern',
+      'brushed aluminum surface', 'polished marble effect', 'rusted steampunk metal',
+      'neon light trails', 'smoke and mist effects', 'crystal refraction patterns',
+      'plasma energy flow', 'quantum particle effects', 'digital glitch texture',
+      
+      // 特殊效果
+      'double exposure blend', 'fractal geometric pattern', 'ink wash painting', 'stained glass mosaic',
+      'chalk pastel drawing', 'blueprint technical', 'vintage photograph', 'anime cel shading',
+      'infrared photography', 'thermal imaging style', 'x-ray transparency',
+      'long exposure light trails', 'microscopic detail view', 'macro photography',
+      'high speed capture', 'time lapse sequence', 'slow motion moment'
+    ]
+  },
+  lighting: {
+    name: '光照',
+    values: [
+      // 自然光照
+      'soft morning sunlight', 'golden hour warm glow', 'dramatic sunset rays', 'misty moonlight',
+      'dappled forest light', 'stormy dramatic clouds', 'northern lights glow', 'starry night sky',
+      'rainbow prism effect', 'sunburst through clouds', 'twilight blue hour',
+      'dawn breaking light', 'eclipse shadow play', 'celestial star trails',
+      'meteor shower streaks', 'bioluminescent glow', 'desert sun flare',
+      
+      // 人工光照
+      'neon city lights', 'warm candlelight', 'cold fluorescent light', 'colorful disco lights',
+      'stark spotlight beam', 'soft studio lighting', 'cinema lighting setup', 'LED color wash',
+      'laser light show', 'holographic displays', 'quantum light effects',
+      'plasma lamp glow', 'fiber optic trails', 'UV blacklight glow',
+      'strobe light flash', 'stage spotlight beams', 'concert lighting rig',
+      
+      // 氛围光效
+      'ethereal glowing aura', 'magical sparkle effect', 'volumetric god rays', 'moody atmospheric haze',
+      'backlit silhouette', 'rim lighting effect', 'subsurface scattering', 'bioluminescent glow',
+      'ghostly spirit lights', 'fairy light bokeh', 'crystal light prisms',
+      'quantum particle glow', 'plasma energy field', 'astral projection light',
+      'dream sequence glow', 'memory light leak', 'time portal radiance',
+      
+      // 特殊光效
+      'rainbow prism refraction', 'laser beam trails', 'fire light flicker', 'underwater caustics',
+      'crystal light dispersion', 'holographic light play', 'lightning flash burst', 'particle light dust',
+      'quantum entanglement glow', 'temporal light shift', 'dimensional rift shine',
+      'neural network visualization', 'data stream light flow', 'binary code illumination',
+      'matrix code rain light', 'digital glitch flare', 'cybernetic circuit glow'
+    ]
+  },
+  camera: {
+    name: '相机',
+    values: [
+      // 镜头类型
+      'wide angle dramatic view', 'telephoto compressed perspective', 'macro extreme closeup', 
+      'fisheye distorted view', 'tilt-shift miniature effect', 'anamorphic cinematic lens',
+      'panoramic wide view', 'super telephoto reach', 'microscope detailed view',
+      'telescope space view', 'infrared spectrum lens', 'x-ray transparent view',
+      'quantum microscope view', 'multispectral imaging', 'hyperspectral capture',
+      
+      // 拍摄角度
+      'bird\'s eye overhead view', 'worm\'s eye view from below', 'dutch angle tilted frame',
+      'over-the-shoulder shot', 'straight-on front view', 'profile side view shot',
+      'three-quarter angle view', 'top-down flat lay', 'diagonal dynamic angle',
+      'extreme low angle shot', 'extreme high angle view', 'rotating orbital shot',
+      'spiral descending view', 'floating drone angle', 'underwater perspective',
+      
+      // 相机动作
+      'tracking shot in motion', 'slow motion capture', 'time lapse sequence', 'freeze frame moment',
+      'dolly zoom effect', 'handheld camera shake', 'steady cam smooth motion', 'drone aerial shot',
+      'bullet time array', 'virtual camera path', 'particle view tracking',
+      'quantum perspective shift', 'dimensional camera hop', 'time slice array',
+      'light field refocus', 'volumetric capture', 'holographic recording',
+      
+      // 景深效果
+      'shallow depth of field', 'deep focus sharp', 'bokeh background blur', 'focus pull rack',
+      'split diopter shot', 'lens flare effect', 'soft focus dreamy', 'multiple exposure blend',
+      'tilt shift selective focus', 'freelensing blur', 'prismatic focus split',
+      'quantum blur effect', 'temporal focus shift', 'dimensional focus blend',
+      'neural network defocus', 'AI generated bokeh', 'synthetic aperture effect'
+    ]
+  },
+  mood: {
+    name: '氛围',
+    values: [
+      // 情感氛围
+      'mysterious and enigmatic', 'peaceful and serene', 'dark and moody', 'bright and cheerful',
+      'melancholic and nostalgic', 'energetic and dynamic', 'dreamy and surreal', 'epic and majestic',
+      'intimate and personal', 'grand and spectacular', 'quiet and contemplative',
+      'chaotic and turbulent', 'harmonious and balanced', 'tense and dramatic',
+      'playful and whimsical', 'solemn and dignified', 'ethereal and otherworldly',
+      'nostalgic and sentimental', 'futuristic and advanced', 'ancient and mystical',
+      'adventurous and bold', 'relaxed and casual', 'luxurious and opulent',
+      
+      // 时间氛围
+      'early morning fresh', 'lazy afternoon calm', 'busy evening rush', 'quiet midnight peace',
+      'golden autumn mood', 'crisp winter scene', 'fresh spring feeling', 'warm summer vibes',
+      'timeless moment pause', 'future chrome gleam', 'retro vintage feel',
+      'eternal twilight glow', 'temporal flux shift', 'quantum time slice',
+      'dimensional drift mood', 'parallel time flow', 'time spiral energy',
+      
+      // 环境氛围
+      'foggy and mysterious', 'rainy and romantic', 'sunny and vibrant', 'stormy and dramatic',
+      'snowy and peaceful', 'windy and dynamic', 'humid and tropical', 'dry and desert-like',
+      'cosmic and stellar', 'underwater serene', 'subterranean deep',
+      'volcanic and primal', 'glacial and pristine', 'jungle and lush',
+      'urban and electric', 'rural and rustic', 'industrial and raw',
+      
+      // 场景氛围
+      'urban and bustling', 'rural and peaceful', 'industrial and raw', 'natural and wild',
+      'futuristic and clean', 'ancient and weathered', 'magical and enchanted', 'cosmic and vast',
+      'cyberpunk and neon', 'steampunk and brass', 'solarpunk and green',
+      'quantum and abstract', 'digital and virtual', 'organic and flowing',
+      'mechanical and precise', 'ethereal and light', 'primal and powerful'
+    ]
+  }
+};
+
+// 生成真随机数
+const getRandomInt = (max) => {
+  // 使用加密安全的随机数生成器
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return array[0] % max;
+};
+
+// 从词库中随机获取值
+const getRandomValue = (category) => {
+  if (!category) return '';
+  
+  const normalizedCategory = category.toLowerCase();
+  if (!vocabularyLibrary[normalizedCategory]) {
+    throw new Error(`未找到词库：${category}`);
+  }
+  
+  const values = vocabularyLibrary[normalizedCategory].values;
+  if (!values || values.length === 0) {
+    throw new Error(`词库 ${category} 中没有可用的值`);
+  }
+  
+  // 使用真随机数
+  return values[getRandomInt(values.length)];
+};
+
+// 替换模板中的变量
+const replaceVariables = (template) => {
+  const variables = new Set();
+  let result = template;
+  
+  // 找出所有变量
+  template.replace(/\{(\w+)\}/g, (match, variable) => {
+    variables.add(variable.toLowerCase());
+  });
+  
+  // 检查所有变量是否存在对应的词库
+  for (const variable of variables) {
+    if (!vocabularyLibrary[variable]) {
+      throw new Error(`未找到变量 "${variable}" 对应的词库`);
+    }
+  }
+  
+  // 替换所有变量
+  result = template.replace(/\{(\w+)\}/g, (match, variable) => {
+    try {
+      const value = getRandomValue(variable);
+      return value;
+    } catch (error) {
+      throw new Error(`替换变量 "${variable}" 时出错：${error.message}`);
+    }
+  });
+  
+  return result;
+};
+
+// 生成完整的提示词
+const generatePrompt = (template) => {
+  try {
+    // 检查模板是否为空
+    if (!template || !template.trim()) {
+      throw new Error('提示词模板不能为空');
+    }
+
+    // 替换所有变量
+    const prompt = replaceVariables(template);
+    
+    // 检查是否还有未替换的变量
+    if (prompt.includes('{') && prompt.includes('}')) {
+      throw new Error('某些变量无法被替换，请检查变量名是否正确');
+    }
+
+    return prompt;
+  } catch (error) {
+    console.error('生成提示词时出错:', error);
+    throw error;
+  }
+};
+
+export { generatePrompt, vocabularyLibrary };
